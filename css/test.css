@@ -1,0 +1,17 @@
+body { font-size: 14px; padding: 1em; }
+
+main span {
+  padding: 0.75em 1em;
+  cursor: pointer;
+}
+
+.selected { color: green; }
+
+
+.selected::before {
+  content: "\2713";
+}
+
+object { width: 8em; }
+
+.wrapper > * {pointer-events: none } /*block mouse events on element children*/
